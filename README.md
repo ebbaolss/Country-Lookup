@@ -2,7 +2,8 @@
 
 This option for the assignment will be delivered as an Android app.
 
-To save time on setup we have provided you with an empty app project where we have included some dependencies we think you might need. You do not have to use our setup though, and you are free to use whatever APIs and libraries you see fit.
+To save time on setup we have provided you with an empty app project where we have included some dependencies we think you might need. 
+You do not have to use our setup though, and you are free to use whatever APIs and libraries you see fit.
 
 ## The task  
 In this task you will be retrieving information from the [Rest countries API](https://restcountries.com/) and showing it in the app.
