@@ -88,6 +88,7 @@ fun MainScreen(countryViewModel: MainViewModel) {
     }
 }
 
+@SuppressLint("SuspiciousIndentation")
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalComposeUiApi::class)
 @Composable
 fun SearchBar(onSearch: (String) -> Unit) {
@@ -97,7 +98,9 @@ fun SearchBar(onSearch: (String) -> Unit) {
 
         OutlinedTextField(
             value = searchQuery,
-            onValueChange = { searchQuery = it },
+            onValueChange = {
+                searchQuery = it
+                onSearch(searchQuery) },
             label = { Text("Search") },
             leadingIcon = { Icon(Icons.Filled.Search, contentDescription = null) },
             modifier = Modifier.fillMaxWidth(),
